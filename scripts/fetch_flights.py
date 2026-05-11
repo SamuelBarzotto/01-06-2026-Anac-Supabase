@@ -17,7 +17,7 @@ import requests
 # ── Configuracoes ─────────────────────────────────────────────────────────────
 
 # URL CORRETA — sem /api/
-API_BASE     = "https://sas.anac.gov.br/sas/siros_api&quot;
+API_BASE     = "https://sas.anac.gov.br/sas/siros_api&quot";
 airports_env = os.environ.get("AIRPORTS", "SBCA")
 AIRPORTS     = [a.strip().upper() for a in airports_env.split(",") if a.strip()]
 
