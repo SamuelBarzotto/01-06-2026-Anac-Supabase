@@ -609,7 +609,7 @@
       }
 
       tbody.innerHTML = filtered.map(f => {
-        const horario = fmtDateTime(f.chegada_brt || f.partida_brt);
+        const horario = fmtDateTime(f.chegada_iso || f.partida_iso);
         const assentos = f.assentos
           ? `<span class="seats-pill">✦ ${f.assentos}</span>`
           : '—';
